@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedidos Donuts</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="titulo">
+            <h1>Duan&apos;s Just-In-Time Donuts</h1>
+            <p>All donuts 50 cents each, cake or giezed</p>
+        </div>
+            <form name="orderform" action="#" onsubmit="PlaceOrder()"> 
+                <img src="/Treino3Donuts/img/donuts.png" alt="Donuts" width="450">
+                <div class="container-form">
+                    <fieldset>
+                        <legend>PEDIDO</legend>
+                        <div class="text-form">
+                            <label for="name">Name</label>
+                            <label for="cakeDonuts" ># of cake donuts</label>
+                            <label for="glazedDonuts"># of glazed donuts</label>
+                            <label for="minute">Minutes &apos;til pickup </label>
+                            <label for="subtotal">Subtotal</label>
+                            <label for="taxa" >Taxa</label>
+                            <label for="total">Total</label>
+                        </div>
+                        <div class="input-form">
+                            <input id="name" class="campo-form" type="text" placeholder="Name" maxlength="17"><br>
+                            <input id="cakeDonuts" class="campo-form" type="number"  onchange="updateOrder()" placeholder="0"><br>
+                            <input id="glazedDonuts" class="campo-form" type="number" onchange="updateOrder()" placeholder="0"><br>           
+                            <input id="minute" class="campo-form" type="number" min="30" max="720" step="5" placeholder="30"><br>   
+                            <input id="subtotal" class="campo-form" type="text" readonly placeholder="R$ 0"><br>
+                            <input id="taxa" class="campo-form" type="text" readonly placeholder="R$ 0"><br>
+                            <input id="total" class="campo-form" type="text" readonly placeholder="R$ 0"><br>
+                            <input class="btn-form" type="submit">
+                        </div>
+                    </fieldset>
+                    </div>
+                <img src="/Treino3Donuts/img/Relogio.png" alt="Relogio" width="380">
+            </form>
+        <script type="text/javascript" src="/Treino3Donuts/script.js"></script>
+    </body>
+</html>
